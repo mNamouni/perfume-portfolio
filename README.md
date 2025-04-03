@@ -68,16 +68,6 @@ Contributing
 
 Contributions are welcome! If you have suggestions, improvements, or bug fixes, please fork the repository, create a new branch, and submit a pull request.
 
-License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-Acknowledgements
-
-PRAW for accessing Reddit's API.
-NLTK and VADER for sentiment analysis.
-spaCy for entity extraction.
-Matplotlib for visualization.
 
 
 
