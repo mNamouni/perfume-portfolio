@@ -14,12 +14,13 @@ sid = SentimentIntensityAnalyzer()
 
 # Configure Reddit API credentials (replace with your actual credentials)
 reddit = praw.Reddit(
-    client_id="",
-    client_secret="",
-    user_agent=""
+    client_id="#your client id",
+    client_secret="#your client secret",
+    user_agent="#your reddit username"
 )
 
-# Define parameters
+# Define parameters (these can be changed to any fragrance adjectives or notes)
+# (The post limit and comment limit can be increased or decreased, as of now it takes around >30 minutes to extract all the data I've requested)
 seasons = ["Winter", "Summer", "Spring", "Autumn"]
 subreddit_name = "fragrance"
 post_limit = 250
