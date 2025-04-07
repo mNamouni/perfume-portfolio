@@ -14,20 +14,26 @@ This project is a Reddit-based scraping and analysis tool designed to extract, c
 
 ✅ Aggregates results into a structured CSV with:
 
-Season
-
-Fragrance name
-
-Frequency (mention count)
-
-Average sentiment score
+  • Season
+  • Fragrance name
+  • Frequency (mention count)
+  • Average sentiment score
 
 🗃️ Files
 
-FragranceScraper(seasonal).py – Main scraper that collects seasonal fragrance mentions from Reddit posts and comments.
+FragranceScraper(seasonal).py
 
-clean_aggregate_sentiment.py (to be added) – Cleans the scraped text, extracts entities (fragrance names), calculates sentiment, and saves seasonal fragrance insights into a CSV.
+ Main scraper that collects Reddit posts and comments related to each season. It tags the data by season and saves them into two CSV files: combined_posts.csv and combined_comments.csv.
+ 
+Seasonalfragrance-cleaner.py
 
+ Processes the scraped data, combining posts and comments, cleaning text, extracting fragrance mentions using simple NLP, and applying sentiment analysis with VADER. It outputs the final results grouped by season in aggregated_entities_by_season.csv.
+ 
 📂 Output Format
 
-The final output file, aggregated_entities_by_season.csv, contains:
+The output CSV (aggregated_entities_by_season.csv) contains the following columns:
+
+season – Winter, Spring, Summer, or Autumn
+entities – Detected fragrance names
+count – How many times each was mentioned
+avg_sentiment – Average sentiment score per fragrance
